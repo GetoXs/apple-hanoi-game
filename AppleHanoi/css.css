@@ -1,0 +1,108 @@
+
+body
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color:rgb(241,241,241);
+}
+
+#overlay
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1000000;
+	background: white;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.7; /* Safari, Opera */
+	-moz-opacity: 0.70; /* FireFox */
+}
+
+#overlay-inner
+{
+	padding: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: alpha(opacity=100); /* IE */
+	opacity: 1; /* Safari, Opera */
+	-moz-opacity: 1; /* FireFox */
+	border: solid 2px;
+	background: white;
+	text-align: center;
+	z-index: 1000001;
+}
+
+.basket
+{
+	width: 786px;
+	border: solid 1px black;
+	position: relative;
+	height: 500px;
+	background-color:white;
+}
+
+.basket-inner
+{
+	width: 260px;
+	border: solid 1px black;
+	height: 100%;
+	cursor: pointer;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+#basket1
+{
+	background-position: top;
+	background-image: url(BakerBg.png);
+}
+
+#basket3
+{
+	background-position: bottom;
+	background-image: url(OvenBg.png);
+}
+
+.row-inner
+{
+	height: 50px;
+	background-image: url(Apple-icon-small.png);
+	background-repeat: repeat-x;
+	padding: 0;
+	margin: auto;
+}
+
+.row, .row-floating
+{
+	cursor: pointer;
+	position: absolute;
+	padding: 0;
+	width: 255px;
+}
+
+#row5
+{
+	width: 250px;
+}
+
+#row4
+{
+	width: 200px;
+}
+
+#row3
+{
+	width: 150px;
+}
+
+#row2
+{
+	width: 100px;
+}
+
+#row1
+{
+	width: 50px;
+}

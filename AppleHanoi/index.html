@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+	<title>Apple Hanoi</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js.js"></script>
+	<link href="css.css" type="text/css" rel="stylesheet" />
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-54928430-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<!-- Nie ma tutaj nic interesującego! -->
+	<div id="overlay" style="display:none"></div><div id="overlay-inner" style="display:none"><h1>Gratulacje!</h1><h2>Udało ci dopiec swego i ukończyć grę w <span id="result_popup"></span> ruchach</h2><div id="additional_fail"><p>Szału nie ma, na pewno stać cię na więcej, dlatego na zachęte możesz skoczyć po kolejne jabłko do kuchni ;)</p><p><img src="ApplePrice.jpg" /></p></div><div id="additional_price"><p>Brawo, udało ci się donieśc jabłka w nienaruszonym stanie, niech nagrodą dla ciebie będzie świeżo wypieczony jabłecznik:</p><p><img src="ApplePiePrice.jpg" /></p><p id="additional_info">Swoją drogą, ukończyłeś grę minimalną liczą ruchów, Bogowie Hanoi są uradowani</p></div></div>
+	<div style="width: 786px; margin:auto">
+		<br />
+		<h1 style="text-align:center">Apple Hanoi</h1>
+		<div>Pomóż strudzonemu piekarzowi załadować wszystkie jabłka na tacę do wypieków, a nagroda cię nie ominie!</div>
+		<div>Pomocą niech ci służą tajemne sztuki wypiekania z wieży Hanoi.</div>
+		<br />
+		<div style="font-weight:bold">Liczba ruchów: <span id="counter">0</span></div>
+		<div id="backet" class="basket">
+			<div id="basket1" class="basket-inner" onclick="actionBasket(1)" onmouseover="actionOver(1)"></div>
+			<div id="basket2" class="basket-inner" onclick="actionBasket(2)" onmouseover="actionOver(2)"></div>
+			<div id="basket3" class="basket-inner" onclick="actionBasket(3)" onmouseover="actionOver(3)"></div>
+			<div data-apples="1" data-basket="1" class="row"><div id="row1" class="row-inner"></div></div>
+			<div data-apples="2" data-basket="1" class="row"><div id="row2" class="row-inner"></div></div>
+			<div data-apples="3" data-basket="1" class="row"><div id="row3" class="row-inner"></div></div>
+			<div data-apples="5" data-basket="1" class="row"><div id="row5" class="row-inner"></div></div>
+			<div data-apples="4" data-basket="1" class="row"><div id="row4" class="row-inner"></div></div>
+		</div>
+	</div>
+</body>
+</html>
